@@ -1,12 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\customcss",
     "\\selectors",
     "\\selectors\\component-selector",
     "\\selectors\\issue-selectors",
     "\\selectors\\issue-selectors\\computer",
-    "\\selectors\\issue-selectors\\malware"
+    "\\selectors\\issue-selectors\\malware",
+    "\\selectors\\issue-selectors\\printer",
+    "\\selectors\\issue-selectors\\webcam",
+    "\\software"
   ],
+  "SelectedNode": "\\selectors\\issue-selectors\\webcam\\index.html",
   "PreviewInSolutionExplorer": false
 }
