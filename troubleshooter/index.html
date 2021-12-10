@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- TITLE -->
+        <title> Troubleshooting Guide</title>
+        <!-- META -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- CSS BINARY -->
+        <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+        <link href="/customcss/loadfadein.css" rel="stylesheet" />
+        <script>
+            function troubleshooter(Visibility, Element, LastElement) {
+                const newelement = document.getElementById(Element)
+                const oldelement = document.getElementById(LastElement)
+                newelement.style.visibility = Visibility
+                oldelement.style.visibility = 'hidden'
+            }
+        </script>
+    </head>
+    <body>
+        <!-- PAGE WRAPPER -->
+        <div class="page-wrapper dark-mode with-navbar with-navbar-fixed-bottom">
+            <!-- NAVBAR -->
+            <nav class="navbar">
+                <a class="btn navbar-brand" href="/">
+                    <p>Troubleshooting guide</p>
+                </a>
+                <div class="navbar-content">
+                    <a class="btn btn-primary" href="selectors/component-selector/">
+                        Start
+                    </a>
+                    <a class="btn" href="/#about">
+                        About
+                    </a>
+                    <a class="btn" href="/#contact">
+                        Contact
+                    </a>
+                    <a class="btn btn-primary" href="/software">
+                        Software
+                    </a>
+                </div>
+            </nav>
+            <!-- CONTENT WRAPPER -->
+            <div class="content-wrapper">
+                <div class="content">
+                    <h1>Troubleshooter</h1>
+                    <div class="card d-flex justify-content-center">
+                        <div id="start">
+                            <h2>Do you want to load the Troubleshooter?</h2>
+                            <button onclick="troubleshooter('visible', '1', 'start');" class="btn">Start</button>
+                        </div>
+                        <div id="1" style="visibility:hidden">
+                            <h2>Does Your computer turn on?</h2>
+                            <a href="/selectors/issue-selectors/computer/#troubleshooter1" class="btn">Yes</a>
+                            <button onclick="troubleshooter('visible', '2', '1');" class="btn">No</button>
+                        </div>
+                        <div id="2" style="visibility: hidden;">
+                            <h2>Does Your Computer turn on but no image is displayed?</h2>
+                            <a href="/selectors/issue-selectors/computer/'troubleshooter2" class="btn">Yes</a>
+                            <button onclick="troubleshooter('visible', '3', '2');" class="btn">No</button>
+                        </div>
+                        <div id="3" style="visibility: hidden;">
+                            not done yet!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- BOTTOM BAR-->
+            <nav class="navbar navbar-fixed-bottom">
+                <a class="btn" href="https://sean-outram.dev">&copy; Sean Outram</a>
+            </nav>
+        </div>
+      </body>
+</html>
