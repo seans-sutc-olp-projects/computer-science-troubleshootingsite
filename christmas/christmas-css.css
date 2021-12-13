@@ -1,0 +1,17 @@
+:root {
+    --color: rgb(165, 8, 8);
+    --addedcolor: red;
+}
+body .dark-mode{
+    background-color: var(--color) !important;
+    background-image: url(flake.svg);
+    background-size: 3em;
+}
+body .dark-mode .navbar{
+    background-color: var(--addedcolor) !important;
+
+}
+body .dark-mode .card{
+    background-color: var(--addedcolor) !important;
+
+}
