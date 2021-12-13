@@ -1,6 +1,9 @@
-function troubleshooter(Visibility, Element, LastElement) {
+function amendfile(OldElement) {
+    const section = document.getElementById(OldElement);
+    section.parentNode.removeChild(section)
+}
+function troubleshooter(Visibility, Element, OldElement) {
     const newelement = document.getElementById(Element)
-    const oldelement = document.getElementById(LastElement)
     newelement.style.visibility = Visibility
-    oldelement.style.visibility = 'hidden'
+    amendfile(OldElement);
 }
