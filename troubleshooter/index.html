@@ -90,6 +90,19 @@
                     <a href="/selector/issue-selectors/malware/troubleshooter9" class="btn">Yes</a>
                     <button onclick="troubleshooter('visible', '10', '9');" class="btn">No</button>
                 </div>
+                <!-- Webcam -->
+                <div id="10" style="visibility: hidden;">
+                    <h2>Does your webcam not connect</h2>
+                    <a href="/selector/issue-selectors/webcam/troubleshooter10" class="btn">Yes</a>
+                    <button onclick="troubleshooter('visible', 'end', '10');" class="btn">No</button>
+                </div>
+                <!-- End -->
+                <div id="end" style="visibility: hidden;">
+                    <h2>Sorry, it appears we were unable to fix your issue</h2>
+                    <a href="/selector/component-selector" class="btn">Or have a look around for yourself!</a>
+                    <h3>Or</h3>
+                    <button onclick="troubleshooter('visible', 'start', 'end');" class="btn">Try again!</button>
+                </div>
             </div>
         </div>
         <!-- BOTTOM BAR-->
