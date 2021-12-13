@@ -4,7 +4,7 @@
 }
 body .dark-mode{
     background-color: var(--color) !important;
-    background-image: url(flake.svg);
+    background-image: url(flakes.svg);
     background-size: 3em;
 }
 body .dark-mode .navbar{
@@ -14,4 +14,7 @@ body .dark-mode .navbar{
 body .dark-mode .card{
     background-color: var(--addedcolor) !important;
 
+}
+body {
+    background-image: url(flakes.svg);
 }
