@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <!-- TITLE -->
@@ -9,14 +9,7 @@
         <!-- CSS BINARY -->
         <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
         <link href="/customcss/loadfadein.css" rel="stylesheet" />
-        <script>
-            function troubleshooter(Visibility, Element, LastElement) {
-                const newelement = document.getElementById(Element)
-                const oldelement = document.getElementById(LastElement)
-                newelement.style.visibility = Visibility
-                oldelement.style.visibility = 'hidden'
-            }
-        </script>
+        <script src="./script.js"></script>
     </head>
     <body>
         <!-- PAGE WRAPPER -->
@@ -45,7 +38,7 @@
             <div class="content-wrapper">
                 <div class="content">
                     <h1>Troubleshooter</h1>
-                    <div class="card d-flex justify-content-center">
+                    <div class="card">
                         <div id="start">
                             <h2>Do you want to load the Troubleshooter?</h2>
                             <button onclick="troubleshooter('visible', '1', 'start');" class="btn">Start</button>
@@ -61,7 +54,9 @@
                             <button onclick="troubleshooter('visible', '3', '2');" class="btn">No</button>
                         </div>
                         <div id="3" style="visibility: hidden;">
-                            not done yet!
+                            <h2>Does your computer restart on it's own?</h2>
+                            <a href="/selectors/issue-selectors/computer/#" class="btn">Yes</a>
+                            <button onclick="troubleshooter('visible', '4', '3');" class="btn">No</button>
                         </div>
                     </div>
                 </div>
