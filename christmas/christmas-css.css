@@ -5,7 +5,7 @@
 body .dark-mode{
     background-color: var(--color) !important;
     background-image: url(flakes.svg);
-    background-size: 3em;
+    background-size: cover;
 }
 body .dark-mode .navbar{
     background-color: var(--addedcolor) !important;
