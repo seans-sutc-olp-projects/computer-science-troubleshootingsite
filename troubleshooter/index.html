@@ -1,91 +1,88 @@
 ﻿<!DOCTYPE html>
 <html>
-    <head>
-        <!-- TITLE -->
-        <title> Troubleshooting Guide</title>
-        <!-- META -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!-- CSS BINARY -->
-        <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
-        <link href="/customcss/loadfadein.css" rel="stylesheet" />
-        <script src="./script.js"></script>
-    </head>
-    <body>
-        <!-- PAGE WRAPPER -->
-        <div class="page-wrapper dark-mode with-navbar with-navbar-fixed-bottom">
-            <!-- NAVBAR -->
-            <nav class="navbar">
-                <a class="btn navbar-brand" href="/">
-                    <p>Troubleshooting guide</p>
+<head>
+    <!-- TITLE -->
+    <title> Troubleshooting Guide</title>
+    <!-- META -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS BINARY -->
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+    <link href="/customcss/loadfadein.css" rel="stylesheet" />
+    <script src="./script.js"></script>
+</head>
+<body>
+    <!-- PAGE WRAPPER -->
+    <div class="page-wrapper dark-mode with-navbar with-navbar-fixed-bottom">
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <a class="btn navbar-brand" href="/">
+                <p>Troubleshooting guide</p>
+            </a>
+            <div class="navbar-content">
+                <a class="btn btn-primary" href="selectors/component-selector/">
+                    Start
                 </a>
-                <div class="navbar-content">
-                    <a class="btn btn-primary" href="selectors/component-selector/">
-                        Start
-                    </a>
-                    <a class="btn" href="/#about">
-                        About
-                    </a>
-                    <a class="btn" href="/#contact">
-                        Contact
-                    </a>
-                    <a class="btn btn-primary" href="/software">
-                        Software
-                    </a>
+                <a class="btn" href="/#about">
+                    About
+                </a>
+                <a class="btn" href="/#contact">
+                    Contact
+                </a>
+                <a class="btn btn-primary" href="/software">
+                    Software
+                </a>
+            </div>
+        </nav>
+        <!-- CONTENT WRAPPER -->
+        <div class="content-wrapper">
+            <div class="content">
+                <div id="start">
+                    <h2>Do you want to load the Troubleshooter?</h2>
+                    <button onclick="troubleshooter('visible', '1', 'start');" class="btn">Start</button>
                 </div>
-            </nav>
-            <!-- CONTENT WRAPPER -->
-            <div class="content-wrapper">
-                <div class="content">
-                    <h1>Troubleshooter</h1>
-                    <div class="card">
-                        <div id="start">
-                            <h2>Do you want to load the Troubleshooter?</h2>
-                            <button onclick="troubleshooter('visible', '1', 'start');" class="btn">Start</button>
-                        </div>
-                        <!-- Computer -->
-                        <div id="1" style="visibility:hidden">
-                            <h2>Does Your computer turn on?</h2>
-                            <a href="/selectors/issue-selectors/computer/#troubleshooter1" class="btn">Yes</a>
-                            <button onclick="troubleshooter('visible', '2', '1');" class="btn">No</button>
-                        </div>
-                        <div id="2" style="visibility: hidden;">
-                            <h2>Does Your Computer turn on but no image is displayed?</h2>
-                            <a href="/selectors/issue-selectors/computer/'troubleshooter2" class="btn">Yes</a>
-                            <button onclick="troubleshooter('visible', '3', '2');" class="btn">No</button>
-                        </div>
-                        <div id="3" style="visibility: hidden;">
-                            <h2>Does your computer restart on it's own?</h2>
-                            <a href="/selectors/issue-selectors/computer/#troubleshooter3" class="btn">Yes</a>
-                            <button onclick="troubleshooter('visible', '4', '3');" class="btn">No</button>
-                        </div>
-                        <div id="4" style="visibility: hidden" ;>
-                            <h2>Does your computer turn on, but the screen goes black and beeps?</h2>
-                            <a href="/selectors/issue-selectors/computer/#troubleshooter4" class="btn">Yes</a>
-                            <button onclick="troubleshooter('visible', '5', '4');" class="btn">No</button>
-                        </div>
-                        <div id="5" style="visibility: hidden" ;>
-                            <h2>Is the clock inyour computer slow?</h2>
-                            <a href="/selectors/issue-selectors/computer/#troubleshooter5" class="btn">Yes</a>
-                            <button onclick="troubleshooter('visible', '6', '5');" class="btn">No</button>
-                        </div>
-                        <div id="6" style="visibility: hidden" ;>
-                            <h2>Is your computer slow? Does it crash?</h2>
-                            <a href="/selectors/issue-selectors/computer/#troubleshooter6" class="btn">Yes</a>
-                            <button onclick="troubleshooter('visible', '7', '6');" class="btn">No</button>
-                        </div>
-                        <div id="7" style="visibility: hidden" ;>
-                            <h2>Does your surge protector or no-break doesn't turn on?</h2>
-                            <a href="/selectors/issue-selectors/computer/#troubleshooter7" class="btn">Yes</a>
-                            <button onclick="troubleshooter('visible', '8', '7');" class="btn">No</button>
-                        </div>
-                    </div>
+                <!-- Computer -->
+                <div id="1" style="visibility:hidden">
+                    <h2>Does Your computer turn on?</h2>
+                    <a href="/selectors/issue-selectors/computer/#troubleshooter1" class="btn">Yes</a>
+                    <button onclick="troubleshooter('visible', '2', '1');" class="btn">No</button>
+                </div>
+                <div id="2" style="visibility: hidden;">
+                    <h2>Does Your Computer turn on but no image is displayed?</h2>
+                    <a href="/selectors/issue-selectors/computer/'troubleshooter2" class="btn">Yes</a>
+                    <button onclick="troubleshooter('visible', '3', '2');" class="btn">No</button>
+                </div>
+                <div id="3" style="visibility: hidden;">
+                    <h2>Does your computer restart on it's own?</h2>
+                    <a href="/selectors/issue-selectors/computer/#troubleshooter3" class="btn">Yes</a>
+                    <button onclick="troubleshooter('visible', '4', '3');" class="btn">No</button>
+                </div>
+                <div id="4" style="visibility: hidden" ;>
+                    <h2>Does your computer turn on, but the screen goes black and beeps?</h2>
+                    <a href="/selectors/issue-selectors/computer/#troubleshooter4" class="btn">Yes</a>
+                    <button onclick="troubleshooter('visible', '5', '4');" class="btn">No</button>
+                </div>
+                <div id="5" style="visibility: hidden" ;>
+                    <h2>Is the clock inyour computer slow?</h2>
+                    <a href="/selectors/issue-selectors/computer/#troubleshooter5" class="btn">Yes</a>
+                    <button onclick="troubleshooter('visible', '6', '5');" class="btn">No</button>
+                </div>
+                <div id="6" style="visibility: hidden" ;>
+                    <h2>Is your computer slow? Does it crash?</h2>
+                    <a href="/selectors/issue-selectors/computer/#troubleshooter6" class="btn">Yes</a>
+                    <button onclick="troubleshooter('visible', '7', '6');" class="btn">No</button>
+                </div>
+                <div id="7" style="visibility: hidden" ;>
+                    <h2>Does your surge protector or no-break doesn't turn on?</h2>
+                    <a href="/selectors/issue-selectors/computer/#troubleshooter7" class="btn">Yes</a>
+                    <button onclick="troubleshooter('visible', '8', '7');" class="btn">No</button>
                 </div>
             </div>
-            <!-- BOTTOM BAR-->
-            <nav class="navbar navbar-fixed-bottom">
-                <a class="btn" href="https://sean-outram.dev">&copy; Sean Outram</a>
-            </nav>
         </div>
-      </body>
+        <!-- BOTTOM BAR-->
+        <nav class="navbar navbar-fixed-bottom">
+            <a class="btn" href="https://sean-outram.dev">&copy; Sean Outram</a>
+        </nav>
+    </div>
+</body>
 </html>
