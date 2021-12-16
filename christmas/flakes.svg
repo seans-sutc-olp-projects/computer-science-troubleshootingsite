@@ -55,8 +55,8 @@
     </defs>
     <style>
         polyline{
-            fill: #FFFFFF;
-            stroke:white;
+            fill: #ffff;
+            stroke:#989d9c;
             stroke-width:0px;
         }
     </style>
