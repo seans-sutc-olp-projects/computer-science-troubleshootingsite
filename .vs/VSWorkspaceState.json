@@ -3,7 +3,6 @@
     "",
     "\\christmas",
     "\\selectors",
-    "\\selectors\\component-selector",
     "\\selectors\\issue-selectors",
     "\\selectors\\issue-selectors\\computer",
     "\\selectors\\issue-selectors\\malware",
@@ -11,6 +10,6 @@
     "\\selectors\\issue-selectors\\webcam",
     "\\troubleshooter"
   ],
-  "SelectedNode": "\\christmas\\flake.svg",
+  "SelectedNode": "\\christmas\\christmas-js.js",
   "PreviewInSolutionExplorer": false
 }
