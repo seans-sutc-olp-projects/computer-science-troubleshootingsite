@@ -1,6 +1,7 @@
 {
   "ExpandedNodes": [
     "",
+    "\\christmas",
     "\\selectors",
     "\\selectors\\component-selector",
     "\\selectors\\issue-selectors",
@@ -8,8 +9,8 @@
     "\\selectors\\issue-selectors\\malware",
     "\\selectors\\issue-selectors\\printer",
     "\\selectors\\issue-selectors\\webcam",
-    "\\software"
+    "\\troubleshooter"
   ],
-  "SelectedNode": "\\selectors\\issue-selectors\\webcam\\index.html",
+  "SelectedNode": "\\christmas\\flake.svg",
   "PreviewInSolutionExplorer": false
 }
