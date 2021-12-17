@@ -9,12 +9,13 @@ body .dark-mode{
 }
 body .dark-mode .navbar{
     background-color: var(--addedcolor) !important;
-
 }
 body .dark-mode .card{
     background-color: var(--addedcolor) !important;
-
 }
 body {
     background-image: url(flakes.svg);
+}
+body .dark-mode .navbar .btn {
+    background-color:   green;
 }
